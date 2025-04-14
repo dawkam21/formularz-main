@@ -23,7 +23,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Formularz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" media="screen" href="style21.php" />
+  <link rel="stylesheet" media="screen" href="style-hist.php" />
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -34,6 +34,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
     echo "<h1>" . ucfirst($_SESSION["username"]) . "</h1>";
     echo "<p>To jest Twój panel zarządzania użytkownikami.</p>"
   ?>
+
   <header>
     <section class="header">
       <a href="history.php"><h1>Lista użytkowników</h1></a>

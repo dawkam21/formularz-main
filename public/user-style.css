@@ -1,0 +1,62 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #2d89ef;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1b66c9;
+}
+
+.btn.logout {
+  background-color: #e74c3c;
+}
+
+.btn.logout:hover {
+  background-color: #c0392b;
+}

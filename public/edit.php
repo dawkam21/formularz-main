@@ -94,7 +94,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Formularz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" media="screen" href="style21.php" />
+    <link rel="stylesheet" media="screen" href="style-hist.php" />
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -105,7 +105,7 @@
   </header>
   <main>
     <h2 class="edith2">Edycja</h2>
-      <form method="post">
+      <form method="post" class="form">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <div class="row-3">
           <label class="col-form-label">Imię: </label>
@@ -139,10 +139,10 @@
         </div>
         <div class="row-4">
           <div class="sbmtBttn">
-            <a href="index1.php"><button type="submit" class="bttnSbmt">Zatwierdź</button></a>
+            <a href="history.php"><button type="submit" class="bttnSbmt">Zatwierdź</button></a>
           </div>
           <div class="cancelBttn">
-            <a href="index1.php" class="bttnCancel" role="button">Anuluj</a>
+            <a href="history.php" class="bttnCancel" role="button">Anuluj</a>
           </div>
         </div>
       </form>

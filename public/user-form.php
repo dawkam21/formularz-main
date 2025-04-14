@@ -104,13 +104,15 @@ if (!isset($_SESSION["user_id"])) {
 
           <textarea name="aboutYourself" id="aboutYourself"></textarea>
           
-          <div class="details">
+          <div class="details1">
             <input type="submit" class="buttons" name="sbmt" id="sbmt" value="Wyślij" disabled />
             <input type="reset" id="wycz" class="buttons" value="Wyczyść"/>
           </div>
         </form>
       </div>
-      <h1 style='color: #fff;'><a style='color: #fff;' href="user-logout.php">Wyloguj</a></h1>
+      <div class="logout">
+        <a href="user-logout.php">Wyloguj</a>
+      </div>
     </main>
     <script src="app.js"></script>
 </body>
