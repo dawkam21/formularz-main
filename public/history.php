@@ -59,7 +59,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
                 
                 echo "<table class='mainTable'>";
                 echo "<tbody>
-                <tr>
+                <tr class='mainTr'>
                 <th style='padding: 2px; width: 8%;'><a href='sortByIdAsc.php'>id <i class='fa fa-sort-down'></i></th>
                 <th style='width: 16%;'><a href='sortByFirstNameAsc.php'>Imię <i class='fa fa-sort-down'></i></a></th>
                 <th style='width: 25%;'><a href='sortbyLastNameAsc.php'>Nazwisko <i class='fa fa-sort-down'></i></a></th>

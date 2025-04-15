@@ -61,10 +61,6 @@ a:hover {
   border-bottom: 1px solid #ffffff33;
 }
 
-.mainTable th {
-  background-color: #2980b9;
-}
-
 .mainTable tr:hover {
   background-color: #ffffff11;
 }
@@ -161,4 +157,27 @@ input[type="text"] {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 600px;
+}
+
+.mainTr {
+  background-color: ;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mainTr:hover {
+  background-color: #3498db;
+  color: white;
+  transform: scale(1.02);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }

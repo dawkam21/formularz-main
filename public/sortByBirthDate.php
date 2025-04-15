@@ -23,7 +23,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Formularz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" media="screen" href="style21.php" />
+  <link rel="stylesheet" media="screen" href="style-hist.php" />
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -34,6 +34,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
     echo "<h1>" . ucfirst($_SESSION["username"]) . "</h1>";
     echo "<p>To jest Twój panel zarządzania użytkownikami.</p>"
   ?>
+
   <header>
     <section class="header">
       <a href="history.php"><h1>Lista użytkowników</h1></a>
@@ -50,7 +51,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
             throw new Exception(mysqli_connect_errno());
             } else {
 
-              $sql1 = "SELECT id, fldFirstName, fldLastName, fldEmail, fldBirthDate, fldSex FROM tbl_users ORDER BY fldBirthDate DESC LIMIT 15";
+              $sql1 = "SELECT id, fldFirstName, fldLastName, fldEmail, fldBirthDate, fldSex FROM tbl_users ORDER BY fldBirthDate ASC LIMIT 15";
               
               $result = $con->query($sql1);
 
@@ -58,7 +59,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
                 
                 echo "<table class='mainTable'>";
                 echo "<tbody>
-                <tr>
+                <tr class='mainTr'>
                 <th style='padding: 2px; width: 8%;'><a href='sortByIdAsc.php'>id <i class='fa fa-sort-down'></i></th>
                 <th style='width: 16%;'><a href='sortByFirstNameAsc.php'>Imię <i class='fa fa-sort-down'></i></a></th>
                 <th style='width: 25%;'><a href='sortbyLastNameAsc.php'>Nazwisko <i class='fa fa-sort-down'></i></a></th>
